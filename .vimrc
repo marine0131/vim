@@ -46,11 +46,7 @@ syntax on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-"tab
-"previous tab
-nnoremap tp :tabp<CR> 
-"next tab
-nnoremap tn :tabn<CR> 
+ 
 "spaces&indent
 set tabstop=4 "number of visual sapces per TAB"
 set softtabstop=4 "number of spaces in tab when editing"
