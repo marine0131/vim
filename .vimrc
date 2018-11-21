@@ -46,7 +46,6 @@ syntax on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
- 
 "spaces&indent
 set tabstop=4 "number of visual sapces per TAB"
 set softtabstop=4 "number of spaces in tab when editing"
@@ -81,6 +80,10 @@ set foldmethod=indent "fold based on indent level
 " Movement
 nnoremap j gj
 nnoremap k gk
+
+" easy motion
+let g:EasyMotion_leader_key = 'W'
+
 "highlight last inserted text
 nnoremap gV `[v`] 
 
@@ -108,5 +111,5 @@ colorscheme molokai
 " pymode 
 let g:pymode_options_max_line_length=120
 
+" ycm
 let g:ycm_server_python_interpreter='/usr/bin/python'
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
