@@ -108,7 +108,7 @@ let g:molokai_original = 1
 colorscheme molokai
 
 " pymode 
-let g:pymode_options_max_line_length=120
+" let g:pymode_options_max_line_length=120
 
 " ycm
-let g:ycm_server_python_interpreter='/usr/bin/python'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py' 
