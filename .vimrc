@@ -17,20 +17,19 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'junegunn/goyo.vim'      
-Plugin 'junegunn/limelight.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
+" Plugin 'junegunn/vim-easy-align' "fast align
+Plugin 'junegunn/goyo.vim' "input :Goyo enter read mode
+" Plugin 'junegunn/limelight.vim' "read mode
+Plugin 'Raimondi/delimitMate' "symbol auto complete
+Plugin 'honza/vim-snippets' "set code block
+" Plugin 'SirVer/ultisnips' "set code block
 Plugin 'tomasr/molokai'
 Plugin 'mattn/emmet-vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
 Plugin 'python-mode/python-mode'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'vim-syntastic/syntastic' "spell check
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
