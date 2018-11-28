@@ -13,23 +13,19 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'kien/ctrlp.vim'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-" Plugin 'junegunn/vim-easy-align' "fast align
 Plugin 'junegunn/goyo.vim' "input :Goyo enter read mode
-" Plugin 'junegunn/limelight.vim' "read mode
 Plugin 'Raimondi/delimitMate' "symbol auto complete
 Plugin 'honza/vim-snippets' "set code block
-" Plugin 'SirVer/ultisnips' "set code block
 Plugin 'tomasr/molokai'
 Plugin 'mattn/emmet-vim'
-" Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
-Plugin 'python-mode/python-mode'
+" Plugin 'python-mode/python-mode'
 Plugin 'Valloric/YouCompleteMe'
-" Plugin 'vim-syntastic/syntastic' "spell check
+" Plugin 'Shougo/deoplete.nvim'
+Plugin 'neomake/neomake' "spell check
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -111,4 +107,5 @@ colorscheme molokai
 " let g:pymode_options_max_line_length=120
 
 " ycm
+let g:ycm_confirm_extra_conf=0
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py' 
