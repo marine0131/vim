@@ -48,6 +48,7 @@ set expandtab "tab are spaces"
 set autoindent
 " set backup
 set smartindent
+set backspace=2
 
 """"""""""""""""""""""
 "UI config 
