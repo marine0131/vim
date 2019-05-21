@@ -68,7 +68,9 @@ set showmatch
 set incsearch
 set hlsearch
 " turn off search highlight when press \ + space
-nnoremap <leader><space> :nohlsearch<CR>  
+nnoremap <leader><space> :nohlsearch<CR>
+" highlight the search while curser is still on current word
+nnoremap * :<C-u>let @/ = expand('<cword>')<cr>
 
 """"""""""""""""""""""
 " Folding
