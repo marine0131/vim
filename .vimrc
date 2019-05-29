@@ -2,30 +2,30 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'haya14busa/incsearch.vim' "search and highlight
-Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
-Plugin 'junegunn/goyo.vim' "input :Goyo enter read mode
-Plugin 'Raimondi/delimitMate' "symbol auto complete
-Plugin 'honza/vim-snippets' "set code block
-Plugin 'tomasr/molokai'
-Plugin 'scrooloose/nerdtree'
-" Plugin 'python-mode/python-mode'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'w0rp/ale' "spell check
+Plug 'haya14busa/incsearch.vim' "search and highlight
+Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/goyo.vim' "input :Goyo enter read mode
+Plug 'Raimondi/delimitMate' "symbol auto complete
+Plug 'honza/vim-snippets' "set code block
+Plug 'tomasr/molokai'
+Plug 'scrooloose/nerdtree'
+" Plug 'python-mode/python-mode'
+Plug 'rdnetto/YCM-Generator' "generate ycm config file automatically
+Plug 'Valloric/YouCompleteMe'
+Plug 'w0rp/ale' "spell check
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()            " required
 filetype indent plugin on    " required
 " To ignore plugin indent changes, instead use:
 syntax on
@@ -85,6 +85,10 @@ set foldmethod=indent "fold based on indent level
 "Nerdtree
 """"""""""""""""""""""
 nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <C-Right> :tabn<CR>
+nnoremap <C-Left> :tabp<CR>
+nnoremap <C-n> :tabnew<CR>
+
 
 """"""""""""""""""""""
 "Color
@@ -110,6 +114,9 @@ colorscheme molokai
 """"""""""""""""""""""
 " ycm
 """"""""""""""""""""""
+let g:ycm_use_clangd = 0
+" let g:ycm_keep_logfiles = 1
+let g:ycm_log_level = 'debug'
 let g:ycm_confirm_extra_conf=0
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py' 
 
